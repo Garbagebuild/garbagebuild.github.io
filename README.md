@@ -1,2 +1,2 @@
 # gabragebuild.github.io
-Ethical Crypto miner for charity.  JoyDrill.
+Ethical Crypto miner for charity.
